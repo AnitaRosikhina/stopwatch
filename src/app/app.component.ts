@@ -1,10 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  template: `<app-stopwatch></app-stopwatch>`,
 })
-export class AppComponent {
-  title = 'stopwatch';
-}
+export class AppComponent {}

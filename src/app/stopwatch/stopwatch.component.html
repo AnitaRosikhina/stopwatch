@@ -1,0 +1,18 @@
+<div>
+  <div class="block_title_time">
+    <p class="title">Stopwatch</p>
+    <p class="time">{{time | date:'mm:ss'}}</p>
+  </div>
+  <button
+    class="btn_start_stop"
+    (click)="isRunning ? stop() : start()"
+  >
+    <div *ngIf="!isRunning">&#9654;</div>
+    <div *ngIf="isRunning">&#9632;</div>
+  </button>
+  <div class="button_group">
+    <button class="btn_wait" (click)="listenDoubleClickForWaitButton()">||</button>
+    <button class="btn_reset" (click)="reset()">&#8634;</button>
+  </div>
+</div>
+
