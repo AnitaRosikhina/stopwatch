@@ -37,6 +37,12 @@
   padding: 7% 20%;
   height: 50vh;
   background: #f4f3f9;
+  @media screen and (max-width: 630px) {
+    padding: 20% 10%;
+  }
+  @media screen and (max-width: 460px) {
+    padding: 30% 5%;
+  }
 
   .btn_reset, .btn_wait {
     border: none;
